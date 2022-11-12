@@ -375,27 +375,7 @@ body {
 
 /* -------MAIN STUDIO------- */
 
-.section-function {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
-
-.section-work {
-  padding-top: 47px;
-  padding-bottom: 94px;
-}
-
-.section-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-client {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.background-hero {
+.hero__background {
   background-color: rgba(196, 196, 196, 1);
   background-image: linear-gradient(
       to right,
@@ -414,7 +394,7 @@ body {
   padding-bottom: 200px;
 }
 
-.title-main {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -428,7 +408,7 @@ body {
   margin-right: auto;
 }
 
-.button-order {
+.hero__btn {
   background-color: var(--main-color);
   font-family: inherit;
   font-weight: 700;
@@ -445,48 +425,26 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-order:focus,
-.button-order:hover {
+.hero__btn:focus,
+.hero__btn:hover {
   background-color: var(--accent-color);
 }
 
-.function-container {
+.section-function {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.function {
   display: flex;
   gap: 30px;
 }
 
-.function-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-color);
-  margin-bottom: 10px;
-}
-
-.function-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-
-.function-section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.function-about {
+.function__about {
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.function-icon {
+.function__icon {
   display: flex;
   background: var(--background-section);
   height: 120px;
@@ -497,7 +455,29 @@ body {
   justify-content: center;
 }
 
-.team-section-title {
+.function__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.function__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.section-images {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.section-images__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -507,16 +487,16 @@ body {
   margin-bottom: 50px;
 }
 
-.work-container {
+.images {
   display: flex;
   gap: 30px;
 }
 
-.label {
+.images__label {
   position: relative;
 }
 
-.label-bg {
+.images__bg {
   position: absolute;
   display: flex;
   align-items: center;
@@ -527,7 +507,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.label-text {
+.images__text {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -538,28 +518,40 @@ body {
   color: var(--white-color);
 }
 
-.background-team {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--background-section);
 }
 
-.background-cards {
+.team__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team__container {
+  display: flex;
+  gap: 30px;
+}
+
+.team__card {
   background-color: var(--background-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-container {
-  display: flex;
-  gap: 30px;
-}
-
-.team-card {
+.team__photo {
   text-align: center;
   padding: 30px 0;
 }
 
-.team-name {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -569,7 +561,7 @@ body {
   margin-bottom: 10px;
 }
 
-.team-position {
+.team__position {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -578,13 +570,13 @@ body {
   margin-bottom: 16px;
 }
 
-.worker-social-item {
+.personal-social {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-link {
+.personal-social__link {
   display: flex;
 
   background-color: #ffffff;
@@ -601,32 +593,34 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.personal-social__icon {
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.personal-social__link:hover,
+.personal-social__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.personal-social__link:hover .personal-social__icon,
+.personal-social__link:focus .personal-social__icon {
   fill: var(--white-color);
 }
 
-.social-item:not(:first-child) {
+.personal-social__item:not(:first-child) {
   margin-left: 10px;
 }
 
-.background-client {
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--background-color);
 }
 
-.client-section-title {
+.client__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -642,11 +636,11 @@ body {
   justify-content: center;
 }
 
-.client-block:not(:first-child) {
+.client__block:not(:first-child) {
   margin-left: 30px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   background-color: var(--background-color);
   border: 1px solid #afb1b8;
@@ -660,49 +654,49 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   border-color: var(--accent-color);
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
   fill: var(--accent-color);
 }
 
-.client-icon {
+.client__icon {
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-yaco {
+.client__yaco {
   width: 41px;
   height: 46.7px;
 }
 
-.icon-company {
+.client__company {
   width: 40px;
   height: 52px;
 }
 
-.icon-round {
+.client__round {
   width: 43px;
   height: 41px;
 }
 
-.icon-foster {
+.client__foster {
   width: 84px;
   height: 41px;
 }
 
-.icon-brand {
+.client__brand {
   width: 63px;
   height: 45px;
 }
 
-.icon-tag {
+.client__tag {
   width: 94px;
   height: 44px;
 }
