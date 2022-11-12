@@ -80,10 +80,13 @@ body {
 
 /* ---------HEADER---------- */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -743,7 +746,19 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-title {
+.portfolio__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  gap: 30px;
+}
+
+.portfolio__card {
+  flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -755,7 +770,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-text {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -765,7 +780,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-project {
+.portfolio__project {
   padding: 20px 24px;
   margin: 0;
   border-right: 1px solid #eeeeee;
@@ -773,24 +788,12 @@ body {
   border-left: 1px solid #eeeeee;
 }
 
-.portfolio-title:focus,
-.portfolio-text:focus {
+.portfolio__title:focus,
+.portfolio__text:focus {
   color: var(--accent-color);
 }
 
-.portfolio-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1170px;
-  gap: 30px;
-}
-
-.portfolio-card {
-  flex-basis: calc((100% - 60px) / 3);
-  position: relative;
-}
-
-.portfolio-link {
+.portfolio__link {
   display: block;
   text-decoration: none;
   transition-property: box-shadow;
@@ -798,8 +801,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -809,7 +812,7 @@ body {
   overflow: hidden;
 }
 
-.overlay-description {
+.overlay__description {
   position: absolute;
   top: 0;
   height: 100%;
@@ -826,7 +829,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-card:hover .overlay-description {
+.portfolio__card:hover .overlay__description {
   transform: translateY(0);
 }
 
