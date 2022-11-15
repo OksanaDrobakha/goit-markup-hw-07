@@ -326,8 +326,12 @@ body {
   color: var(--main-color);
 }
 
-.nav__logo_dark {
+.nav__logo--dark {
   color: var(--secondary-color);
+}
+
+.nav__logo--light {
+  color: var(--white-color);
 }
 
 .nav {
@@ -727,10 +731,6 @@ body {
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
-}
-
-.nav__logo_light {
-  color: var(--white-color);
 }
 
 .address__map {
