@@ -31,11 +31,10 @@
 .personal-social__link:hover,
 .personal-social__link:focus {
   background-color: var(--accent-color);
-}
-
-.personal-social__link:hover .personal-social__icon,
-.personal-social__link:focus .personal-social__icon {
-  fill: var(--white-color);
+  .personal-social__icon,
+  .personal-social__icon {
+    fill: var(--white-color);
+  }
 }
 
 .personal-social__item:not(:first-child) {
